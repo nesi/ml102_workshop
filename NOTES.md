@@ -14,4 +14,4 @@ Replace the following to ensure compatibility with TF 2.4:
 - `layers.Rescaling` replaced with `layers.experimental.preprocessing.Rescaling`
 - use `layers.experimental.preprocessing` for data augmentation
 
-This is a temporary soultion, a better long-term solution is to update TF on NeSI.
+This is a temporary solution, a better long-term solution is to update TF on NeSI.
