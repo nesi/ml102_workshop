@@ -2,16 +2,15 @@
 
 ## Running notebooks on NeSI
 
-Create a Jupyter kernel for Tensorflow:
+Create a shared Jupyter kernel for Tensorflow 2.6 for all users of the same account:
 ```
 module purge && module load JupyterLab
-nesi-add-kernel tensorflow-2.4.1 TensorFlow/2.4.1-gimkl-2020a-Python-3.8.2
+nesi-add-kernel --shared "tensorflow-2.6.3" TensorFlow/.2.6.3-gimkl-2020a-Python-3.9.9
 ```
 
-Replace the following to ensure compatibility with TF 2.4:
+Make sure resources are enough to run the notebooks:
 
-- `tf.keras.utils.image_dataset_from_directory` replaced with `tf.keras.preprocessing.image_dataset_from_directory`
-- `layers.Rescaling` replaced with `layers.experimental.preprocessing.Rescaling`
-- use `layers.experimental.preprocessing` for data augmentation
-
-This is a temporary solution, a better long-term solution is to update TF on NeSI.
+- `02_cnn.ipynb` is fine with 2 CPUS & 4GB
+- `03_classification.ipynb` needs more RAM, fine with 2 CPUs and 8GB
+- `04_transfer_learning.ipynb` is fine with 2 CPUs and 8GB
+- `05_segmentation.ipynb` needs `tensorflow_datasets` to be installed
