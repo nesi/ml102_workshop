@@ -14,3 +14,9 @@ Make sure resources are enough to run the notebooks:
 - `03_classification.ipynb` needs more RAM, fine with 2 CPUs and 8GB
 - `04_transfer_learning.ipynb` is fine with 2 CPUs and 8GB
 - `05_segmentation.ipynb` needs `tensorflow_datasets` to be installed
+
+Data
+
+- downloads not working for me
+- will work on a download resource location?
+
