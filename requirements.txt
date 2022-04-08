@@ -1,0 +1,8 @@
+tensorflow
+matplotlib
+numpy
+pillow
+ipython
+tensorflow-datasets
+ipywidgets
+git+https://github.com/tensorflow/examples.git
