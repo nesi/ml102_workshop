@@ -1,5 +1,7 @@
 # Notes
 
+[JIRA](https://nznesi.atlassian.net/browse/EV-20)
+
 ## Running notebooks on NeSI
 
 Create a shared Jupyter kernel for Tensorflow 2.6 for all users of the same account:
@@ -7,6 +9,7 @@ Create a shared Jupyter kernel for Tensorflow 2.6 for all users of the same acco
 module purge && module load JupyterLab
 nesi-add-kernel --shared "tensorflow-2.6.3" TensorFlow/.2.6.3-gimkl-2020a-Python-3.9.9
 ```
+
 
 Make sure resources are enough to run the notebooks:
 
