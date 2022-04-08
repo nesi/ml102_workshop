@@ -20,6 +20,6 @@ Make sure resources are enough to run the notebooks:
 
 Data
 
-- downloads not working for me
-- will work on a download resource location?
-
+- downloads is not working with NeSI module TF 2.6.3 (SSL certificate issue)
+- this does work with NeSI jupyter kernel Python 3.8.2 (but this one has a too old version of TF)
+- resources could be pre-downloaded to avoid attendees to fill up their home storage space
