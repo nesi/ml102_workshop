@@ -92,7 +92,7 @@ tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 tensorflow==2.8.0
 tensorflow-datasets==4.5.2
-tensorflow-examples===f67a01daeb5cc34b1c5a3a2ee25c977321a86280-
+git+https://github.com/tensorflow/examples.git
 tensorflow-io-gcs-filesystem==0.24.0
 tensorflow-metadata==1.7.0
 termcolor==1.1.0
