@@ -33,6 +33,13 @@ nesi-add-kernel -p "$CONDA_VENV" --shared "tensorflow_ml102" cuDNN/8.1.1.33-CUDA
 
 Make sure resources are enough to run the notebooks:
 
+- notebooks 02, 03, 04 and 05 work on 2 CPUs & 4GB (if one running at a time)
+  - training in notebooks 02, 03 and 04 take 1 min / epoch
+  - training in notebook 05 take ~7 min / epoch
+
+- notebooks 02, 03 and 04 can run with 8GB (no restart) but not 05
+  - training a bit faster with 4 CPUs
+
 - `02_cnn.ipynb` is fine with 2 CPUS & 4GB
 - `03_classification.ipynb` needs more RAM, fine with 2 CPUs and 8GB
 - `04_transfer_learning.ipynb` is fine with 2 CPUs and 8GB
