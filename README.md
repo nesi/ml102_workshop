@@ -55,8 +55,8 @@ We will now show you how to navigate in the Jupyter interface to find them.
 We also created or adapted the following notebooks.
 We won't use them during the workshop.
 
-- [Convolutional Neural Network (CNN)](notebooks/02_cnn.ipynb) example ([source](https://www.tensorflow.org/tutorials/images/cnn))
-- [Image Segmentation](notebooks/05_segmentation.ipynb) ([source](https://www.tensorflow.org/tutorials/images/segmentation))
+- [Convolutional Neural Network (CNN)](notebooks/cnn.ipynb) example ([source](https://www.tensorflow.org/tutorials/images/cnn))
+- [Image Segmentation](notebooks/segmentation.ipynb) ([source](https://www.tensorflow.org/tutorials/images/segmentation))
 
 
 ## Appendix
