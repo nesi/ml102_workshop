@@ -35,11 +35,9 @@ At the beginning of the workshop, follow these instructions to start a session o
 This workshop consists of a series of notebooks, adapted from the [TensorFlow tutorials](https://www.tensorflow.org/tutorials):
 
 1. [Introduction](notebooks/01_introduction.ipynb)
-2. [CNN](notebooks/02_cnn.ipynb) ([source](https://www.tensorflow.org/tutorials/images/cnn))
-3. [Classification](notebooks/03_classification.ipynb) ([source](https://www.tensorflow.org/tutorials/images/classification))
-4. [Transfer learning](notebooks/04_transfer_learning.ipynb) ([source](https://www.tensorflow.org/tutorials/images/transfer_learning))
-5. [Segmentation](notebooks/05_segmentation.ipynb) ([source](https://www.tensorflow.org/tutorials/images/segmentation))
-6. [Slurm jobs on NeSI GPUs](notebooks/06_slurm_jobs.ipynb)
+1. [Image classification](notebooks/02_classification.ipynb) ([source](https://www.tensorflow.org/tutorials/images/classification))
+1. [Transfer learning and fine-tuning](notebooks/03_transfer_learning.ipynb) ([source](https://www.tensorflow.org/tutorials/images/transfer_learning))
+1. [Slurm jobs on NeSI GPUs](notebooks/04_slurm_jobs.ipynb)
 
 We have already made a copy of these notebooks for you in the folder:
 
@@ -50,6 +48,15 @@ We have already made a copy of these notebooks for you in the folder:
 where `$USER` stands for your NeSI username.
 
 We will now show you how to navigate in the Jupyter interface to find them.
+
+
+## Supplemental material
+
+We also created or adapted the following notebooks.
+We won't use them during the workshop.
+
+- [Convolutional Neural Network (CNN)](notebooks/02_cnn.ipynb) example ([source](https://www.tensorflow.org/tutorials/images/cnn))
+- [Image Segmentation](notebooks/05_segmentation.ipynb) ([source](https://www.tensorflow.org/tutorials/images/segmentation))
 
 
 ## Appendix
