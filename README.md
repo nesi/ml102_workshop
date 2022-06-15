@@ -25,7 +25,7 @@ At the beginning of the workshop, follow these instructions to start a session o
    then press the **Start** button.
    ![](images/server_options.png)
 
-4. Let us know in the zoom chat that you are ready to go 👍
+4. Let us know in zoom that you are ready to go (use 👍 reaction)
 
 ⚠️ If you don't manage to connect, let us know as soon as possible in the chat. ⚠️
 
