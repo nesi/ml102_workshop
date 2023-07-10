@@ -42,7 +42,7 @@ This workshop consists of a series of notebooks, adapted from the [TensorFlow tu
 We have already made a copy of these notebooks for you in the folder:
 
 ```
-/nesi/project/nesi99991/ml102_20220616/$USER
+/nesi/project/nesi99991/ml102_20230713/$USER
 ```
 
 where `$USER` stands for your NeSI username.
