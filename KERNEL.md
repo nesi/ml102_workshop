@@ -33,6 +33,12 @@ module purge && module load JupyterLab
 nesi-add-kernel -a nesi99991 -p "$CONDA_VENV" --shared tensorflow_ml102 TensorFlow/2.8.2-gimkl-2022a-Python-3.10.5
 ```
 
+Alternative Kernel for Simplicity uses only the Tensorflow Module:
+
+```
+module purge && module load JupyterLab
+nesi-add-kernel -a nesi99991 --shared tensorflow_ml102 TensorFlow/2.8.2-gimkl-2022a-Python-3.10.5
+```
 
 ## References
 
