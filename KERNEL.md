@@ -19,8 +19,8 @@ module purge && module load Miniconda3
 source $(conda info --base)/etc/profile.d/conda.sh
 export PYTHONNOUSERSITE=1
 
-CONDA_VENV=/nesi/project/nesi99991/ml102_20220616/jupyter_kernel_env
-conda create -p "$CONDA_VENV" -y python=3.9.12
+CONDA_VENV=/nesi/project/nesi99991/ml102_20230713/jupyter_kernel_env
+conda create -p "$CONDA_VENV" -y python=3.10.5
 conda activate "$CONDA_VENV"
 pip install -r requirements.lock.txt
 conda deactivate
@@ -30,7 +30,7 @@ Then add it as a shared kernel for nesi99991:
 
 ```
 module purge && module load JupyterLab
-nesi-add-kernel -a nesi99991 -p "$CONDA_VENV" --shared tensorflow_ml102 cuDNN/8.1.1.33-CUDA-11.2.0
+nesi-add-kernel -a nesi99991 -p "$CONDA_VENV" --shared tensorflow_ml102 TensorFlow/2.8.2-gimkl-2022a-Python-3.10.5
 ```
 
 
