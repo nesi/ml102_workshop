@@ -132,3 +132,6 @@ dmypy.json
 notebooks/logs
 notebooks/outputs
 notebooks/scripts
+
+#test scripts
+tests/
