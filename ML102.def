@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: python:3.11-bookworm
+From: python:3.10-bookworm
 
 %files
     ./ /opt/ml102_workshop/
