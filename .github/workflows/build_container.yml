@@ -29,5 +29,5 @@ jobs:
       - name: Login and deploy
         run: |
           echo ${{ secrets.GITHUB_TOKEN }} | apptainer remote login -u ${{ secrets.GHCR_USERNAME }} --password-stdin oras://ghcr.io
-          apptainer push ML102.sif "oras://ghcr.io/ml102_workshop:latest"
+          apptainer push ML102.sif "oras://ghcr.io/${GITHUB_REPOSITORY}:latest"
         if: ${{ github.ref == 'refs/heads/main' }}
