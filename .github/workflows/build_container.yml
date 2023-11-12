@@ -1,0 +1,30 @@
+name: Build container image
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: |
+          sudo apt update -y
+          sudo apt install -y wget
+      - name: Install Apptainer
+        run: |
+          wget https://github.com/apptainer/apptainer/releases/download/v1.2.4/apptainer_1.2.4_amd64.deb
+          sudo apt install -y ./apptainer_1.2.4_amd64.deb
+          rm ./apptainer_1.2.4_amd64.deb
+      - uses: actions/checkout@v4
+      - name: Build container
+        run: sudo apptainer build ML102.sif ML102.def
+      - name: Login and deploy
+        run: |
+          echo ${{ secrets.GITHUB_TOKEN }} | apptainer remote login -u ${{ secrets.GHCR_USERNAME }} --password-stdin oras://ghcr.io
+          apptainer push ML102.sif "oras://ghcr.io/ml102_workshop:latest"
+        if: ${{ github.ref == 'refs/heads/main' }}

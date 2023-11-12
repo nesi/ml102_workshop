@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: python:3.10-bookworm
+
+%files
+    ./ /opt/ml102_workshop/
+
+%post
+    apt-get update && apt-get install -y \
+        rsync \
+        nano \
+        vim \
+        git \
+        wget \
+        curl
+    pip install -r /opt/ml102_workshop/requirements.lock.txt
+    pip install jupyterlab
