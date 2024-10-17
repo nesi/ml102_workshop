@@ -7,3 +7,4 @@ tensorflow-datasets
 ipywidgets
 git+https://github.com/tensorflow/examples.git
 pydot
+scikit-image
