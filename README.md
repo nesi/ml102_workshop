@@ -1,5 +1,5 @@
 # ML102 - Image analysis
-![login](/images/REANNZ_logo.png)
+![reannz](/images/REANNZ_logo.png)
 This is an online workshop that will use Jupyter on the REANNZ Open OnDemand platform.
 
 ## Setup
